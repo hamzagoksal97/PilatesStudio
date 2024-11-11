@@ -1,0 +1,44 @@
+@* Views/Shared/_Header.cshtml *@
+@{
+var currentUrl = Context.Request.Path;
+}
+
+<header>
+    <div class="main_header">
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg navbar-light p-0">
+                <a class="navbar-brand" href="./index.html">
+                    <figure class="mb-0">
+                        <img src="./assets/images/logo.png" alt="">
+                    </figure>
+                </a>
+                <button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item @(currentUrl == "/" ? "active" : "")">
+                            <a class="nav-link" href="/">Ana Sayfa</a>
+                        </li>
+                        <li class="nav-item @(currentUrl == Url.Action("Index", "About") ? "active" : "")">
+                            <a class="nav-link" href="@Url.Action("Index","About")">Hakkımızda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./services.html">Hizmetlerimiz</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./team.html">Ekibimiz</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link contact_us" href="./contact.html">İletişim</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>
