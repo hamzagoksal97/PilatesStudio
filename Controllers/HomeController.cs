@@ -2,7 +2,7 @@ using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using PlatesStudio.Models;
 
-namespace PlatesStudio.Controllers;
+namespace PilatesStudio.Controllers;
 
 public class HomeController : Controller
 {
