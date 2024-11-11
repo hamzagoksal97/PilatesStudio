@@ -341,7 +341,7 @@ p{
 }
 .banner-section-outer .banner-section .banner-section-image figure{
     position: absolute;
-    top: -150px;
+    top: -5px;
     left: -20px;
 }
 @keyframes float {
