@@ -10,4 +10,4 @@ COPY --from=build /app/publish .
 
 
 
-CMD [ "dotnet", "NormTraining.API.dll"]
+CMD [ "dotnet", "PilatesStudio.dll"]
