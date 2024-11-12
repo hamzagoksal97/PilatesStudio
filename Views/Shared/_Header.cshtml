@@ -1,6 +1,7 @@
 @* Views/Shared/_Header.cshtml *@
 @{
 var currentUrl = Context.Request.Path;
+var currentService = Context.Request.Query["service"];
 }
 
 <header>
@@ -27,8 +28,25 @@ var currentUrl = Context.Request.Path;
                         <li class="nav-item @(currentUrl == Url.Action("Index", "About") ? "active" : "")">
                             <a class="nav-link" href="@Url.Action("Index","About")">Hakkımızda</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/#hizmetlerimiz">Hizmetlerimiz</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle dropdown-color navbar-text-color" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                               aria-expanded="false"> Hizmetlerimiz </a>
+                            <div class="dropdown-menu drop-down-content">
+                                <ul class="list-unstyled drop-down-pages">
+                                    <li class="nav-item @(currentService == "1" ? "active" : "")">
+                                        <a class="dropdown-item nav-link " href="@Url.Action("Index", "Services", new { service = "1" })">Klinik Pilates</a>
+                                    </li>
+                                    <li class="nav-item @(currentService == "2" ? "active" : "")">
+                                        <a class="dropdown-item nav-link" href="@Url.Action("Index", "Services", new { service = "2" })">Reformer Pilates</a>
+                                    </li>
+                                    <li class="nav-item @(currentService == "3" ? "active" : "")">
+                                        <a class="dropdown-item nav-link" href="@Url.Action("Index", "Services", new { service = "3" })">Çocuk Pilates</a>
+                                    </li>
+                                    <li class="nav-item @(currentService == "4" ? "active" : "")">
+                                        <a class="dropdown-item nav-link" href="@Url.Action("Index", "Services", new { service = "4" })">Fonksiyonel Antreman</a>
+                                    </li>
+                                </ul>
+                            </div>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="./team.html">Ekibimiz</a>

@@ -1,3 +1,5 @@
+@model PilatesStudio.Controllers.ServiceModel
+
 @{
     Layout = null;
     ViewBag.Title = "Hakkımızda";
@@ -7,7 +9,7 @@
 <html lang="zxx">
 
 <head>
-    <title>Hakkımızda | 3Pilates</title>
+    <title>Hizmetlerimiz | 3Pilates</title>
     <!-- /SEO Ultimate -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
     <meta charset="utf-8">
@@ -20,7 +22,7 @@
     <link rel="apple-touch-icon" sizes="144x144" href="./assets/images/favicon/apple-icon-144x144.png">
     <link rel="apple-touch-icon" sizes="152x152" href="./assets/images/favicon/apple-icon-152x152.png">
     <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="./assets/images/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="./assets/images/favicon/android-icon-192x192.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="./assets/images/favicon/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon/favicon-16x16.png">
@@ -51,10 +53,10 @@
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div class="banner-section-content">
-                        <h1 data-aos="fade-up">Hakkımızda</h1>
-                        <p data-aos="fade-right">3PİLATES STUDİO - SAĞLIK VE ZİNDELİĞİN MERKEZİ</p>
+                        <h1 data-aos="fade-up">@Model.Name</h1>
+                        <p data-aos="fade-right">@Model.Description</p>
                         <div class="btn_wrapper">
-                            <span class="sub_home_span">Anasayfa </span><i class="fa-solid fa-angles-right" aria-hidden="true"></i><span class="sub_span"> Hakkımızda</span>
+                            <span class="sub_home_span">Ana Sayfa </span><i class="fa-solid fa-angles-right" aria-hidden="true"></i><span class="sub_span"> @Model.Name</span>
                         </div>
                     </div>
                 </div>
@@ -74,23 +76,22 @@
         </div>
     </section>
 </div>
-<!-- ABOUT US SECTION -->
-<!-- DISCOUNT SECTION -->
-<section class="discount_section">
+<!-- OUR SERVICES SECTION -->
+<section class="services_section">
     <div class="container">
-        <div class="row" data-aos="fade-up">
+        <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                <div class="discount_content">
-                    <p>
-                        3Pilates Studio Çekmeköy, bireylerin sağlık, zindelik ve yaşam kalitesini artırmayı hedefleyen öncü bir pilates stüdyosudur. Misyonumuz, her yaştan ve her seviyeden insanı kucaklayarak, pilatesin sunduğu benzersiz faydalar aracılığıyla fiziksel ve zihinsel iyiliği desteklemektir. Stüdyomuz, Çekmeköy Taşdelen'de, modern ve ferah bir alanda yer almakta, pilatesin tüm disiplinlerini kapsayan geniş bir hizmet yelpazesi sunmaktadır.
-
-                        Deneyimli ve sertifikalı eğitmenlerimiz, bireysel sağlık hedeflerinize ulaşmanız için sizlere kişiselleştirilmiş ders planları sunar. Reformer Pilates'ten kardiyo antrenmanlarına, Klinik Pilates'ten Fonksiyonel Antrenmanlara kadar çeşitli programlarımızla, her bireyin ihtiyacına uygun çözümler sağlamaktayız.
-                    </p>
+                <div class="services_content">
+                    <p>@Model.Content</p>
                 </div>
             </div>
         </div>
+        <figure class="services_page_services_right_shape right_shape mb-0">
+            <img src="./assets/images/servicespage_services_right_shape.png" alt="" class="img-fluid">
+        </figure>
     </div>
 </section>
+<!-- FOOTER SECTION -->
 @Html.Partial("_Footer")
 <!-- Latest compiled JavaScript -->
 <script src="assets/js/jquery-3.6.0.min.js"></script>
