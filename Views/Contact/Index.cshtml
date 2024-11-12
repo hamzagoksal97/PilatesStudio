@@ -1,14 +1,12 @@
-@model PilatesStudio.Controllers.ServiceModel
-
 @{
-    Layout = null;
+Layout = null;
 }
 
 <!DOCTYPE html>
 <html lang="zxx">
 
 <head>
-    <title>Hizmetlerimiz | 3Pilates</title>
+    <title>İletişim | 3Pilates</title>
     <!-- /SEO Ultimate -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
     <meta charset="utf-8">
@@ -52,10 +50,10 @@
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div class="banner-section-content">
-                        <h1 data-aos="fade-up">@Model.Name</h1>
-                        <p data-aos="fade-right">@Model.Description</p>
+                        <h1 data-aos="fade-up">İletişime Geçin</h1>
+                        <p data-aos="fade-right">Sağlıklı ve güçlü bir yaşam için bizimle iletişime geçin!</p>
                         <div class="btn_wrapper">
-                            <span class="sub_home_span">Anasayfa </span><i class="fa-solid fa-angles-right" aria-hidden="true"></i><span class="sub_span"> @Model.Name</span>
+                            <span class="sub_home_span">Anasayfa </span><i class="fa-solid fa-angles-right" aria-hidden="true"></i><span class="sub_span"> İletişim</span>
                         </div>
                     </div>
                 </div>
@@ -75,22 +73,68 @@
         </div>
     </section>
 </div>
-<!-- OUR SERVICES SECTION -->
-<section class="services_section">
+<!-- MESSAGE SECTION -->
+<section class="message_section">
     <div class="container">
         <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                <div class="services_content">
-                    <p>@Model.Content</p>
+            <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12" data-aos="fade-up">
+                <div class="message_content">
+                    <div class="contact_map_section">
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1340.0000000000002!2d29.2192829!3d41.0269456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cacf6565a878c3%3A0x94a18d0a53d42d8!2s3Pilates%20Studio%20%7C%20Ta%C5%9Fdelen%20-%20%C3%87ekmek%C3%B6y!5e0!3m2!1str!2str!4v1698412345678!5m2!1str!2str" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12" data-aos="fade-right">
+                <div class="row" data-aos="fade-up">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="box box_padding">
+                            <div class="box_image_content">
+                                <figure class="mb-0">
+                                    <img src="./assets/images/contact_location.png" alt="" class="img-fluid">
+                                </figure>
+                            </div>
+                            <div class="box_wrapper">
+                                <h3>Konum</h3>
+                                <p class="mb-0">Taşdelen, Göngören Mah, Zülfikar Sk. No:6A /5, 34788 Çekmeköy/İstanbul</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="box">
+                            <div class="box_image_content">
+                                <figure class="mb-0">
+                                    <img src="./assets/images/contact_phone.png" alt="" class="img-fluid">
+                                </figure>
+                            </div>
+                            <div class="box_wrapper">
+                                <h3>Telefon</h3>
+                                <p><a href="tel:(+905462341800)" class="text-decoration-none">0546 234 18 00</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="box mb-0">
+                            <div class="box_image_content">
+                                <figure class="mb-0">
+                                    <img src="./assets/images/contact_mail.png" alt="" class="img-fluid">
+                                </figure>
+                            </div>
+                            <div class="box_wrapper">
+                                <h3>Email</h3>
+                                <p><a href="mailto:info@yogastic.com" class="text-decoration-none">info@pilatesstudio.com</a></p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <figure class="services_page_services_right_shape right_shape mb-0">
-            <img src="./assets/images/servicespage_services_right_shape.png" alt="" class="img-fluid">
-        </figure>
     </div>
 </section>
-<!-- FOOTER SECTION -->
+
 @Html.Partial("_Footer")
 <!-- Latest compiled JavaScript -->
 <script src="assets/js/jquery-3.6.0.min.js"></script>
