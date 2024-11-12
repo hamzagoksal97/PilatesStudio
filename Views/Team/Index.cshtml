@@ -1,5 +1,3 @@
-@model PilatesStudio.Controllers.ServiceModel
-
 @{
     Layout = null;
 }
@@ -8,7 +6,7 @@
 <html lang="zxx">
 
 <head>
-    <title>Hizmetlerimiz | 3Pilates</title>
+    <title>Team | Yogastic</title>
     <!-- /SEO Ultimate -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
     <meta charset="utf-8">
@@ -21,7 +19,7 @@
     <link rel="apple-touch-icon" sizes="144x144" href="./assets/images/favicon/apple-icon-144x144.png">
     <link rel="apple-touch-icon" sizes="152x152" href="./assets/images/favicon/apple-icon-152x152.png">
     <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="./assets/images/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="./assets/images/favicon/android-icon-192x192.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="./assets/images/favicon/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon/favicon-16x16.png">
@@ -52,10 +50,10 @@
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div class="banner-section-content">
-                        <h1 data-aos="fade-up">@Model.Name</h1>
-                        <p data-aos="fade-right">@Model.Description</p>
+                        <h1 data-aos="fade-up">Ekibimiz</h1>
+                        <p data-aos="fade-right">Alanında uzman ekibimiz, sağlıklı ve güçlü bir yaşam için sizinle birlikte çalışıyor.</p>
                         <div class="btn_wrapper">
-                            <span class="sub_home_span">Ana Sayfa </span><i class="fa-solid fa-angles-right" aria-hidden="true"></i><span class="sub_span"> @Model.Name</span>
+                            <span class="sub_home_span">Anasayfa </span><i class="fa-solid fa-angles-right" aria-hidden="true"></i><span class="sub_span"> Ekibimiz</span>
                         </div>
                     </div>
                 </div>
@@ -75,22 +73,62 @@
         </div>
     </section>
 </div>
-<!-- OUR SERVICES SECTION -->
-<section class="services_section">
+<!-- OUR TEAM SECTION -->
+<section class="our_team_section">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                <div class="services_content">
-                    <p>@Model.Content</p>
+                <div class="our_team_content">
+                    <h5>Ekibimiz</h5>
+                    <h2>Ekip Üyelerimiz</h2>
+                    <p>
+                        3P Pilates Studio, alanında uzman, deneyimli
+                        ve tutkulu eğitmenler ...
+                        Her biri, sağlık ve zindelik yolculuğunuzda yanınızda.
+                    </p>
                 </div>
             </div>
         </div>
-        <figure class="services_page_services_right_shape right_shape mb-0">
-            <img src="./assets/images/servicespage_services_right_shape.png" alt="" class="img-fluid">
-        </figure>
+        <div class="row justify-content-center" data-aos="fade-up">
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                <div class="our_team_box_content">
+                    <div class="our_team_box_upper_portion">
+                        <figure class="mb-0">
+                            <img src="./assets/images/our_team_1.png" alt="" class="img-fluid">
+                        </figure>
+                    </div>
+                    <div class="our_team_box_lower_portion">
+                        <h3>Ümran Çiftçi</h3>
+                        <p>Eğitmen</p>
+                        <div class="social_icons">
+                            <a href="https://www.instagram.com/3pilatess/" target="_blank" class="text-decoration-none">
+                                <i class="fa-brands fa-instagram mr-0" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                <div class="our_team_box_content">
+                    <div class="our_team_box_upper_portion">
+                        <figure class="mb-0">
+                            <img src="./assets/images/our_team_2.png" alt="" class="img-fluid">
+                        </figure>
+                    </div>
+                    <div class="our_team_box_lower_portion">
+                        <h3>Eda Melis Özdemir</h3>
+                        <p>Eğitmen</p>
+                        <div class="social_icons">
+                            <a href="https://www.instagram.com/3pilatess/" target="_blank" class="text-decoration-none">
+                                <i class="fa-brands fa-instagram mr-0" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
-<!-- FOOTER SECTION -->
 @Html.Partial("_Footer")
 <!-- Latest compiled JavaScript -->
 <script src="assets/js/jquery-3.6.0.min.js"></script>

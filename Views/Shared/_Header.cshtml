@@ -48,8 +48,8 @@ var currentService = Context.Request.Query["service"];
                                 </ul>
                             </div>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./team.html">Ekibimiz</a>
+                        <li class="nav-item @(currentUrl == Url.Action("Index", "Team") ? "active" : "")">
+                            <a class="nav-link" href="@Url.Action("Index","Team")">Ekibimiz</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link contact_us" href="./contact.html">İletişim</a>
